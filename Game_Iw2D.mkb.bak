@@ -1,0 +1,73 @@
+#!/usr/bin/env mkb
+options
+{
+}
+
+subprojects
+{
+	iw2d
+	iwresmanager
+}
+
+includepath
+{
+	./source
+}
+
+files
+{
+	[Source]
+	(source)
+	# Game
+	Main.cpp
+	Main.h
+	Game.cpp
+	Game.h
+	Bucket.cpp
+	Bucket.h
+	WaterDrop.cpp
+	WaterDrop.h
+	Cloud.cpp
+	Cloud.h
+	Input.cpp
+	Input.h
+	Sprite.cpp
+	Sprite.h
+
+	[Data]
+	(data)
+	Level1.group
+}
+
+assets
+{
+	(data)
+
+	(data-ram/data-gles1, data)
+	level1.group.bin
+}
+
+deployments
+{
+}
+#### AUTO GENERATED deployment settings from DeployTool.exe. Do not edit below this line ####
+deployments
+{
+	["Default"]
+	blackberry-cskpass='1122666'
+	blackberry-keystore='C:/Users/alexandr/Downloads/author.p12'
+	blackberry-storepass='1122666'
+	caption='PutinVSYanukovych'
+	embed-icf=1
+	name='PutinVSYanukovych'
+	playbook-author='slashwan1122@gmail.com'
+	playbook-authorid='slashwan1122@gmail.com'
+	playbook-cskpass='1122666'
+	playbook-keystore='C:/Users/alexandr/AppData/Local/Research In Motion/author.p12'
+	playbook-storepass='1122666'
+	provider='alexwan'
+	splashscreen-auto-onblack=1
+	version-major=1
+	version-minor=1
+	version-revision=1
+}
